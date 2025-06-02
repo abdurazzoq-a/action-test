@@ -1,0 +1,15 @@
+name: "ActionLearning"
+
+version: '3.8'
+
+services:
+  nest-app:
+    build: .
+
+    env_file:
+      - .env
+
+    ports:
+      - "80:9000"
+
+    command: "npm run start:prod"
